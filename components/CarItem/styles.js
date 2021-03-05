@@ -27,6 +27,10 @@ export const styles = StyleSheet.create({
     subtitle:{
       fontSize:20,
       color:'#5c5362'
+    },
+
+    buttons:{
+      
     }
     
   
