@@ -1,19 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View,ImageBackground } from 'react-native';
-import CarItem from './components/CarItem'
+import { StyleSheet, Text, View,ImageBackground, Pressable } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
+import CarList from './components/CarList'
+import Header from './components/Header';
+
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem
-        name={"Model S"}
-        tagline = {"Starting at $99,999"}
-        taglineCTA = {"Touchless Delivery"}
-        image = {require('./assets/images/ModelS.jpeg')}
-      />
+      <Header/>
+      <ScrollView>
+        <CarList/>
+      </ScrollView>
     </View>
+    
   );
 }
 

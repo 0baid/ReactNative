@@ -1,10 +1,9 @@
-import {StyleSheet} from 'react-native'
+import {StyleSheet , Dimensions} from 'react-native'
 
 export const styles = StyleSheet.create({
     carContainer:{
-      width:'100%',
-      height:'100%',
-      
+      width: Dimensions.get('screen').width,
+      height:Dimensions.get('screen').height
     },
     image:{
       width:'100%',
@@ -31,8 +30,12 @@ export const styles = StyleSheet.create({
 
     buttons:{
       position:'absolute',
-      bottom:50,
+      bottom:80,
       width:'100%',
+    },
+    resButtons: {
+      position:'absolute'
+
     },
     taglineCTA : {
       textDecorationLine:'underline'
