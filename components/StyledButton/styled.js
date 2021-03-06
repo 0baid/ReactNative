@@ -14,7 +14,7 @@ export const styled = StyleSheet.create({
     },
     text:{
         fontSize:14,
-        fontWeight:500,
+        fontWeight:"500",
         textTransform:'uppercase'
     }
 });

@@ -25,12 +25,17 @@ export const styles = StyleSheet.create({
       fontWeight:'bold',
     },
     subtitle:{
-      fontSize:20,
+      fontSize:16,
       color:'#5c5362'
     },
 
     buttons:{
-      
+      position:'absolute',
+      bottom:50,
+      width:'100%',
+    },
+    taglineCTA : {
+      textDecorationLine:'underline'
     }
     
   
